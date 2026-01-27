@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  text-align: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.show {
+  opacity: 1;
+}
+
+.fly-away {
+  transform: translate(-50%, -100vh) rotate(20deg);
+  opacity: 0;
+}
+
+.hidden {
+  display: none;
+}
+</style>
+</head>
+<body>
+  <div class="overlay" id="overlay"></div>
+  
+  <div class="popup" id="popup">
+    <h2>Специальное предложение! 🎁</h2>
+    <p>Только сегодня скидка 20% на все услуги!</p>
+    <button onclick="closePopup()" style="padding: 10px 30px; margin-top: 20px;">
+      Получить скидку
+    </button>
+  </div>
+  
+  <div class="content">
+    <h1>Добро пожаловать на сайт</h1>
+    <p>Здесь ваш основной контент...</p>
+  </div>
+
+  <script>
+    // Показываем попап при загрузке
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(() => {
+        document.getElementById('overlay').classList.add('show');
+        document.getElementById('popup').classList.add('show');
+      }, 1000); // Задержка 1 секунда
+    });
+    
+    function closePopup() {
+      const popup = document.getElementById('popup');
+      const overlay = document.getElementById('overlay');
+      
+      // Эффект вылета
+      popup.classList.add('fly-away');
+      overlay.style.opacity = '0';
+      
+      // Полное скрытие после анимации
+      setTimeout(() => {
+        popup.classList.add('hidden');
+        overlay.classList.add('hidden');
+      }, 800);
+    }
+  </script>
+</body>
+</html>

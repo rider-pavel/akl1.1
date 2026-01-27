@@ -1,0 +1,173 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1.head {
+    color: rgb(24, 15, 63);
+    font-size: 100px;
+    margin-left: 50px;
+    width: 1200px;
+}
+
+header {
+    display: flex;
+}
+
+h1.more_than_school {
+    padding-left: 50px;
+    color: rgb(24, 15, 63);
+    font-size: 120px;
+}
+
+img.love_akl {
+    width: 550px;
+    padding-left: 50px;
+}
+
+div.more_than_school {
+    display: flex;
+}
+
+h1.more_than_school2 {
+    padding-left: 30px;
+    color: rgb(24, 15, 63);
+    font-size: 40px;
+}
+
+p.plus {
+    color: rgb(24, 15, 63);
+    font-size: 23px;
+    width: 550px;
+}
+
+#math {
+    padding-left: 30px;
+}
+
+div.plus {
+    display: flex;
+    padding-left: 50px;
+}
+
+img.exemple_musem1 {
+    margin-top: 100px;
+    border-radius: 20px;
+    height: 400px;
+    margin-left: 50px;
+}
+
+img.exemple_musem2 {
+    margin-top: 100px;
+    border-radius: 20px;
+    height: 400px;
+    margin-left: 50px;
+}
+
+div.facts {
+    width: 1200px;
+    height: 600px;
+    border-radius: 30px;
+    margin-top: 120px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(7, 2, 83));
+    display: flex;
+}
+
+h1.fact1 {
+    color: aliceblue;
+    font-size: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+p.fact2 {
+    color: aliceblue;
+    font-size: 30px;
+    width: 500px;
+    margin-left: 50px;
+}
+
+p.fact3 {
+    color: aliceblue;
+    font-size: 30px;
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 65px;
+}
+
+p.fact4 {
+    color: aliceblue;
+    font-size: 30px;
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+p.fact5 {
+    color: aliceblue;
+    font-size: 30px;
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+div.facts2 {
+    position: relative;
+    top: 165px;
+    right: 830px;
+}
+
+div.facts3 {
+    position: relative;
+    top: 170px;
+    right: 830px;
+}
+
+h1.event {
+    font-size: 130px;
+    margin-left: 50px;
+    color: rgb(24, 15, 63);
+}
+
+p.event1 {
+    padding: 20px;
+    border: 2px rgb(24, 15, 63) solid;
+    border-radius: 20px;
+    width: 500px;
+    margin-left: 50px;
+    font-size: 25px;
+    color: rgb(24, 15, 63);
+    transition: 0.3s;
+}
+
+.event1:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+p.event2 {
+    padding: 20px;
+    border: 2px rgb(24, 15, 63) solid;
+    border-radius: 20px;
+    width: 500px;
+    margin-left: 50px;
+    font-size: 25px;
+    color: rgb(24, 15, 63);
+    transition: 0.3s;
+}
+
+.event2:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+div.events1 {
+    display: flex;
+}
+
+.map {
+    position: relative;
+    left: 100px;
+}
+
+h1.place {
+    font-size: 120px;
+    margin-left: 50px;
+}
